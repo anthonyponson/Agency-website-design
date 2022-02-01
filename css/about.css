@@ -1,0 +1,265 @@
+html, body{
+    height: 100%;
+    
+}
+body{
+    font-family: 'Roboto', sans-serif !important;
+}
+
+.navbar-brand{
+    padding-left: 50px;
+    height: 80px;
+	font-size: 28px;
+	font-weight: 700;
+	color: slategray!important;
+}
+
+.navbar {
+    width: 100%;
+	z-index: 9999;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.navbar-toggler {
+    border: 1px solid #1089d4;
+}
+
+.navbar-toggler-icon {
+	width: 1.3em;
+    height: 1.3em;
+}
+
+.navbar-toggler-icon i {
+    color: #1089d4;
+    vertical-align: middle;
+}
+
+.navbar-fixed-top {
+	position: absolute!important;
+	background-color: #fff!important; 
+	border-bottom: none;
+	transition: background-color 0.25s ease 0s;
+}
+
+.navbar-fixed-top.opaque {
+	position: fixed!important;
+	background-color: #fff!important;
+	border-bottom: 1px solid #efefef;
+	transition: all 0.25s ease-in-out 0s;
+}
+
+.navbar-fixed-top .navbar-nav > li > a, .navbar-fixed-top .navbar-nav > li > a:hover{
+	color: slategray!important;
+    text-decoration: none;
+    text-underline-position: none;
+	-webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.navbar-fixed-top .navbar-nav > li > a{
+	color: slategray !important;
+	font-size: 15px !important;
+	line-height: 30px !important;
+	padding: 10px 20px!important;
+	font-weight: 600;
+    letter-spacing: 1px;
+}
+
+
+.navbar-fixed-top .navbar-nav .current a {
+    color:#1089d4!important;
+     -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.navbar-fixed-top.opaque .navbar-nav .current a {
+    color:#1089d4!important;
+     -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.navbar-fixed-top .navbar-nav > li > a.discover-btn {
+	color: #1089d4!important;
+	background: transparent;
+	border: 1px solid #1e90ff;
+	border-radius: 8px 8px;
+	padding: 12px 18px!important;
+	margin-left: 10px;
+	margin-right: 15px;
+}
+
+.navbar-fixed-top .navbar-nav > li > a.discover-btn:hover {
+	border: 1px solid #1e90ff;
+	color: #fff!important;
+	background: #1e90ff;
+}
+
+
+
+
+.about-title h1{
+    padding-top: 50px;
+    padding-bottom: 30px;
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.about-para{
+    padding: 20px 200px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #676767;
+   
+}
+@media(max-width:1000px){
+    .about-para{
+        padding: 20px 50px;
+    }
+}
+
+.our-services-title h1{
+    
+    font-size: 40px;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+.services-title h1
+{
+    padding:20px 0;
+    font-size: 30px;
+    color: #707070;
+    font-weight: 400;
+    
+    
+}
+.services .our-services li{
+    list-style: none;
+    padding: 5px 0;
+    color: #676767;
+}
+
+
+#contact{
+    height: 100%;
+    
+}
+.contact-bg-cover{
+    height: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7) ),url(../img/About-us-cta.jpg);
+    opacity: 100;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+
+.contact-content-box{
+    padding-top: 200px;
+    display: table;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    
+}
+.contact-content-inner-box{
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 50px;
+}
+.contact-content-inner-box h1{
+    color: #ffff;
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+  
+    
+}
+.contact-content-inner-box h3{
+     color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: capitalize;
+    padding-bottom: 50px;
+    
+}
+#contact-btn a{
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+   border: 2px solid #fff;
+    padding: 15px 20px;
+    border-radius: 5px;
+    letter-spacing: 4px;
+}
+#contact-btn:hover a{
+    list-style: none;
+    text-decoration: none; 
+    background-color:deepskyblue;
+    border: 2px solid deepskyblue;
+    padding: 15px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    letter-spacing: 4px;
+}
+
+#contact{
+    box-shadow: 0px 32px 50px 13px rgba(0,0,0,0.75);
+}
+
+
+.leo-footer{
+    
+    padding: 20px 0;
+    padding-left: 60px;
+}
+
+.container h6{
+    font-size: 13px;
+    color: #000;
+}
+.social-icon i{
+    font-size: 20px;
+    padding: 5px 20x;
+    padding-right: 40px;
+    text-align:right;
+}
+.social-icon i:hover{
+    color: #000000;
+}
+
+/*============================================================================================================
+============================================responsive section==============================================*/
+
+@media(max-width:700px){
+    .social-icon i{
+        padding-top: 20px;
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
