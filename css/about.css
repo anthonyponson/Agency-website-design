@@ -216,36 +216,6 @@ body{
 }
 
 
-.leo-footer{
-    
-    padding: 20px 0;
-    padding-left: 60px;
-}
-
-.container h6{
-    font-size: 13px;
-    color: #000;
-}
-.social-icon i{
-    font-size: 20px;
-    padding: 5px 20x;
-    padding-right: 40px;
-    text-align:right;
-}
-.social-icon i:hover{
-    color: #000000;
-}
-
-/*============================================================================================================
-============================================responsive section==============================================*/
-
-@media(max-width:700px){
-    .social-icon i{
-        padding-top: 20px;
-    
-    
-}
-
 
 
 

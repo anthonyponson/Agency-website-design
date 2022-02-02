@@ -1,3 +1,7 @@
+*{
+  transition: all 0.4s ease-in-out;
+}
+
 html,
 body {
   height: 100%;
@@ -11,10 +15,9 @@ body {
   font-weight: 700;
   color: slategray !important;
 }
-
 .navbar {
   width: 100%;
-  z-index: 9999;
+  z-index: 1;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 0;
@@ -65,6 +68,8 @@ body {
   font-weight: 600;
   letter-spacing: 1px;
 }
+
+
 
 .navbar-fixed-top .navbar-nav .current a {
   transition: all 0.5s ease;
@@ -128,16 +133,21 @@ body {
   padding: 0 0 3% 0;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 991px) and (min-width:501px) {
   .home-content-inner-box h1 {
     font-size: 3rem;
   }
-}
-@media (max-width: 400px) {
-  .home-content-inner-box h1 {
-    font-size: 1.2rem;
+  .home-content-inner-box h3{
+    font-size: 1.4rem;
+  }
+  #home-btn a {
+    font-size: 18px !important;
+    font-weight: 400 !important;
+    padding: 10px 15px !important;
   }
 }
+
+
 #home-btn a {
   font-size: 20px;
   font-weight: 600;
@@ -218,35 +228,12 @@ body {
   padding-top: 8px;
 }
 
-@media (max-width: 1000px) {
-  .work-title h1 {
-    font-size: 30px;
-    padding-left: 20px;
-  }
-
-  #work-btn a {
-    padding-bottom: 30px;
-    margin-left: 0px;
-  }
-}
-
-@media (min-width: 1000px) {
-  #work-btn a {
-    margin-left: 20px;
-  }
-}
-
-@media (max-width: 600px) {
-  #work-btn a {
-    margin-left: 20px;
-  }
-}
 #work-btn a {
-  font-size: 17px;
+  font-size: 20px;
   font-weight: 400;
   color: slategray;
-  border: 2px solid #000;
-  padding: 10px 30px;
+  border: 3px solid deepskyblue;
+  padding: 10px 15px;
   border-radius: 1rem;
 }
 
@@ -356,7 +343,7 @@ body {
 #contact {
   padding-top: 100px;
   background-color: rgb(247, 43, 80);
-  box-shadow: 0px 32px 50px 13px rgba(0, 0, 0, 0.75);
+  box-shadow: -6px 6px 47px -14px rgba(0,0,0,0.75);
 }
 .contact-title h1 {
   padding-top: 30px;
@@ -728,31 +715,41 @@ textarea.input2 + .focus-input2::after {
   }
 }
 
-.leo-footer {
-  padding: 1% 5% 2% 5%;
-}
-
-.container h6 {
-  font-size: 13px;
-  color: #000;
-  padding: 9% 0 1% 0;
-}
-.footer-icon {
-  font-size: 1.5rem;
-  padding: 9% 0 1% 5%;
-  color: #00aeef;
-}
-
-.social-icon i:hover {
-  color: #01a5d6;
-}
-
-
-/*============================================================================================================
-============================================responsive section==============================================*/
-
-@media (max-width: 700px) {
-  .social-icon i {
-    padding-top: 20px;
+@media (max-width: 991px){
+  .navbar-fixed-top .navbar-nav > li > a {
+    padding: 10px 10px !important;
   }
+  .navbar-brand{
+    padding-bottom: 100px;
+  }
+}
+
+@media (max-width: 500px) and (min-width: 301px){
+  .home-content-inner-box h1 {
+    font-size: 2.2rem;
+  }
+  .home-content-inner-box h3{
+    font-size: 1.1rem;
+  }
+  #home-btn a {
+    font-size: 16px !important;
+    font-weight: 400 !important;
+    padding: 10px 15px !important;
+  }
+}
+
+@media (max-width: 991px) and (min-width: 601px){
+ 
+  #work-section1{
+    padding: 0 20px;
+  }
+  #work-btn a{
+    font-size: 18px;
+    padding: 8px 10px;
+  }
+
+.work-title h1{
+  font-size: 30px !important;
+
+}
 }

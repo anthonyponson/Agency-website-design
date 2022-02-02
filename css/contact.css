@@ -506,38 +506,3 @@ textarea.input2 + .focus-input2::after {
     opacity: 1;
   }
 }
-
-
-
-.leo-footer{
-    
-    padding: 20px 0;
-    padding-left: 60px;
-}
-
-.container h6{
-    font-size: 13px;
-    color: #000;
-}
-.social-icon i{
-    font-size: 20px;
-    padding: 5px 20x;
-    padding-right: 40px;
-    text-align:right;
-}
-.social-icon i:hover{
-    color: #000000;
-}
-
-.btn-back-to-top{
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    border: none;
-    background-color: #7c7c7c;
-}
-.btn-back-to-top:hover{
-    background-color: deepskyblue;
-}
-.fa-angle-up i{
-font-size: 20px;}
