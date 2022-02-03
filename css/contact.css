@@ -4,109 +4,105 @@ body{
 }
 
 
-.navbar-brand{
-    padding-left: 50px;
-    height: 80px;
-	
-	font-size: 28px;
-	font-weight: 700;
-	color: slategray!important;
+.navbar-brand {
+  height: 80px;
+  font-family: "Dosis", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: slategray !important;
 }
-
 .navbar {
-    width: 100%;
-	z-index: 9999;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	padding-left: 0;
-	padding-right: 0;
+  width: 100%;
+  z-index: 1;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 0;
+  padding-right: 0;
+}
+@media (max-width:1080px) and (min-width:991px){
+  .navbar{
+    padding: 0 20px;
+  }
 }
 
 .navbar-toggler {
-    border: 1px solid #1089d4;
+  border: 1px solid #1089d4;
 }
 
 .navbar-toggler-icon {
-	width: 1.3em;
-    height: 1.3em;
+  width: 1.3em;
+  height: 1.3em;
 }
 
 .navbar-toggler-icon i {
-    color: #1089d4;
-    vertical-align: middle;
+  color: #1089d4;
+  vertical-align: middle;
 }
 
 .navbar-fixed-top {
-	position: absolute!important;
-	background-color: #fff!important; 
-	border-bottom: none;
-	transition: background-color 0.25s ease 0s;
+  position: absolute !important;
+  background-color: #fff !important;
+  border-bottom: none;
+  transition: background-color 0.25s ease 0s;
+  padding-bottom: 30px;
 }
 
 .navbar-fixed-top.opaque {
-	position: fixed!important;
-	background-color: #fff!important;
-	border-bottom: 1px solid #efefef;
-	transition: all 0.25s ease-in-out 0s;
+  position: fixed !important;
+  background-color: #fff !important;
+  border-bottom: 1px solid #efefef;
+  transition: all 0.25s ease-in-out 0s;
 }
 
-.navbar-fixed-top .navbar-nav > li > a, .navbar-fixed-top .navbar-nav > li > a:hover{
-	color: slategray!important;
-	-webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
+.navbar-fixed-top .navbar-nav > li > a,
+.navbar-fixed-top .navbar-nav > li > a:hover {
+  color: slategray !important;
+  transition: all 0.5s ease;
 }
 
-.navbar-fixed-top .navbar-nav > li > a{
-	color: slategray !important;
-	font-size: 15px !important;
-	line-height: 30px !important;
-	padding: 10px 20px!important;
-	font-weight: 600;
-    letter-spacing: 1px;
+.navbar-fixed-top .navbar-nav > li > a {
+  color: slategray !important;
+  font-size: 15px !important;
+  line-height: 30px !important;
+  padding: 10px 20px !important;
+  font-family: "Dosis", sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
+
 
 
 .navbar-fixed-top .navbar-nav .current a {
-    color:#1089d4!important;
-     -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .navbar-fixed-top.opaque .navbar-nav .current a {
-    color:#1089d4!important;
-     -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
+  color: #1089d4 !important;
+  transition: all 0.5s ease;
 }
 
 .navbar-fixed-top .navbar-nav > li > a.discover-btn {
-	color: #1089d4!important;
-	background: transparent;
-	border: 1px solid #1e90ff;
-	border-radius: 8px 8px;
-	padding: 12px 18px!important;
-	margin-left: 10px;
-	margin-right: 15px;
+  color: #1089d4 !important;
+  background: transparent;
+  border: 1px solid #1e90ff;
+  border-radius: 8px 8px;
+  padding: 12px 18px !important;
+  margin-left: 10px;
+  margin-right: 15px;
+  font-family: "Dosis", sans-serif;
 }
 
 .navbar-fixed-top .navbar-nav > li > a.discover-btn:hover {
-	border: 1px solid #1e90ff;
-	color: #fff!important;
-	background: #1e90ff;
+  border: 1px solid #1e90ff;
+  color: #fff !important;
+  background: #1e90ff;
 }
-
 
 
 
 #contact{
     padding-top: 100px;
-    background-color:#3b4a4e;
-    box-shadow: 0px 32px 50px 13px rgba(0,0,0,0.75);
+    background-color:#1e90ff;
 }
 .contact-title h1{
     padding-top: 30px;
@@ -123,7 +119,17 @@ body{
     padding-bottom: 10px;
     font-size: 25px
 }
-
+@media (max-width:991px) and (min-width:330px){
+  .contact-title h1{
+    font-size: 22px !important;
+  }
+  .contact-title h2{
+    font-size: 18px;
+  }
+  .contact-title{
+    padding: 50px 0;
+  }
+}
 
 
 
@@ -174,25 +180,15 @@ textarea:focus, input:focus {
   border-color: transparent !important;
 }
 
-input:focus::-webkit-input-placeholder { color:transparent; }
-input:focus:-moz-placeholder { color:transparent; }
-input:focus::-moz-placeholder { color:transparent; }
-input:focus:-ms-input-placeholder { color:transparent; }
+input:focus:: input-placeholder { color:transparent; }
+
 
 textarea:focus::-webkit-input-placeholder { color:transparent; }
-textarea:focus:-moz-placeholder { color:transparent; }
-textarea:focus::-moz-placeholder { color:transparent; }
-textarea:focus:-ms-input-placeholder { color:transparent; }
 
-input::-webkit-input-placeholder { color: #999999; }
-input:-moz-placeholder { color: #999999; }
-input::-moz-placeholder { color: #999999; }
-input:-ms-input-placeholder { color: #999999; }
+input::input-placeholder { color: #999999; }
 
-textarea::-webkit-input-placeholder { color: #999999; }
-textarea:-moz-placeholder { color: #999999; }
-textarea::-moz-placeholder { color: #999999; }
-textarea:-ms-input-placeholder { color: #999999; }
+
+textarea::input-placeholder { color: #999999; }
 
 /*---------------------------------------------*/
 button {
@@ -303,10 +299,6 @@ iframe {
   left: 0;
   width: 0;
   height: 2px;
-
-  -webkit-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  -moz-transition: all 0.4s;
   transition: all 0.4s;
 
   
@@ -324,10 +316,6 @@ iframe {
   font-size: 15px;
   color: #999999;
   line-height: 1.2;
-
-  -webkit-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  -moz-transition: all 0.4s;
   transition: all 0.4s;
 }
 
@@ -456,10 +444,6 @@ textarea.input2 + .focus-input2::after {
   border-radius: 2px;
   padding: 4px 25px 4px 10px;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
   transform: translateY(-50%);
   right: 0px;
   pointer-events: none;
@@ -472,25 +456,12 @@ textarea.input2 + .focus-input2::after {
 
   visibility: hidden;
   opacity: 0;
-
-  -webkit-transition: opacity 0.4s;
-  -o-transition: opacity 0.4s;
-  -moz-transition: opacity 0.4s;
   transition: opacity 0.4s;
 }
 
 .alert-validate::after {
   content: "\f12a";
-  
-  display: block;
-  position: absolute;
-  color: #c80000;
-  font-size: 16px;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
+
   transform: translateY(-50%);
   right: 8px;
 }
