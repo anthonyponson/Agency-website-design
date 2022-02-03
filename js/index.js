@@ -1,5 +1,4 @@
-////opacity////
-
+//// home opacity////
 
 $(document).ready(function(){
     
@@ -22,26 +21,10 @@ $(document).ready(function(){
 });
 
 
-$(function(){
-   
-    $("#leo-portfolio").owlCarousel({
-        
-        items: 2,
-        autoplay: true,
-        smartSpeed: 700,
-//        loop: true,
-    });
-    
-});
-
-
 //contact form    
-
 
 (function ($) {
     "use strict";
-
-
     /*==================================================================
     [ Focus Contact2 ]*/
     $('.input2').each(function(){

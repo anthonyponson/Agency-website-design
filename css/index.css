@@ -23,6 +23,11 @@ body {
   padding-left: 0;
   padding-right: 0;
 }
+@media (max-width:1080px) and (min-width:991px){
+  .navbar{
+    padding: 0 20px;
+  }
+}
 
 .navbar-toggler {
   border: 1px solid #1089d4;
@@ -220,14 +225,55 @@ body {
 #work {
   padding: 0 6% 10% 6%;
 }
-.work-title h1 {
+div .work-title h1 {
   font-size: 45px;
   font-weight: bold;
   text-transform: uppercase;
   padding-bottom: 30px;
-  padding-top: 8px;
+  padding-left: 8px;
 }
+#work-btn{
+  padding-left: 10px;
+}
+/* @media (max-width:1200px) and (min-width:991px){
+  #work-section1 .work-title h1{
+    padding-left: 0 18px;
+  }
+  #work-section1 #work-btn{
+    padding-left: 18px;
+   
+  }
+} */
+/* @media (max-width:1080px) and (min-width:992px){
+  #work-section1 .work-title h1{
+    padding: 0 20px;
+  }
+}
+@media (max-width:1440px) and (min-width:992px){
+  #work-section1 .work-title h1{
+    padding: 0 20px;
+  }
+} */
+@media (max-width:992px) and (min-width:768px){
+  #work-section1 .work-title h1{
+    padding: 12px 15px;
+    font-size: 1.6rem;
+  }
+  #col-md{
+    padding: 10px 0 !important;
+    color: forestgreen !important;
+  }
+  .fancy-box{
+    padding: 1px 0;
+  }
+  .fancy-box h1{
+    font-size: 18px !important;
 
+  }
+  .fancy-box h1 > p {
+    font-size: 16px !important;
+  }
+}
 #work-btn a {
   font-size: 20px;
   font-weight: 400;
@@ -256,7 +302,7 @@ body {
 .work-icon i {
   color: deepskyblue;
 }
-.work-service-title h1 {
+/* .work-service-title h1 {
   font-size: 25px;
   font-weight: bolder;
   text-transform: capitalize;
@@ -268,7 +314,7 @@ body {
   letter-spacing: 1px;
   font-weight: 600;
   line-height: 30px;
-}
+} */
 .fancy-box {
   float: left;
   width: 100%;
@@ -376,7 +422,6 @@ a:focus {
 
 a:hover {
   text-decoration: none;
-  color: #57b846;
 }
 
 /*---------------------------------------------*/
@@ -646,7 +691,6 @@ textarea.input2 + .focus-input2::after {
 }
 .contact2-form-btn:hover {
   background-color: #01a5d6;
-  box-shadow: 10px 13px 76px -19px rgba(0, 0, 0, 0.938);
 }
 
 .wrap-contact2-form-btn:hover .contact2-form-bgbtn {
@@ -740,9 +784,6 @@ textarea.input2 + .focus-input2::after {
 
 @media (max-width: 991px) and (min-width: 601px){
  
-  #work-section1{
-    padding: 0 20px;
-  }
   #work-btn a{
     font-size: 18px;
     padding: 8px 10px;
@@ -750,6 +791,7 @@ textarea.input2 + .focus-input2::after {
 
 .work-title h1{
   font-size: 30px !important;
+  /* padding-left: 100px; */
 
 }
 }
